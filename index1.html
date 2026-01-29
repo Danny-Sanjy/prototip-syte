@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="style.css">
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для моей любимой ❤️</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!-- Floating particles background -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Main Title -->
+    <section>
+        <h1>Для моей любимой</h1>
+        <p style="font-size: 1.5rem; text-align: center; font-style: italic; color: var(--accent);">
+            1 год и 4 месяца вместе...
+        </p>
+    </section>
+    
+    <!-- Falling Hearts Section -->
+    <section>
+        <h2></h2>
+        <div class="hearts-container" id="heartsContainer"></div>
+    </section>
+    
+    <!-- Photo Gallery -->
+    <section class="gallery-section">
+        <h2>Моя любимая девушка лучше всех</h2>
+        <div class="gallery-container" id="gallery">
+            <!-- Photos will be added here - you can add your own -->
+            <div class="gallery-item">
+                <img src= "assets/img/moya.jpg" alt="Photo 1">
+                <div class="caption">Твоя улыбка</div>  
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/moya1.jpg" alt="Photo 2">
+                <div class="caption">Твои красивые губки</div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/moya5.jpg" alt="Photo 3">
+                <div class="caption">Твой миленький носик</div>
+            </div>
+            <!-- Add more gallery items here with your photos -->
+        </div>
+        <p style="text-align: center; margin-top: 20px; font-style: italic; color: var(--accent);">
+            ← Прокрути влево и вправо →
+        </p>
+    </section>
+    
+    <!-- Poem Section -->
+    <section class="poem-section">
+        <h2>Для тебя</h2>
+        <p>В каждом взгляде - целая вселенная,</p>
+        <p>В каждом слове - бесконечная нежность,</p>
+        <p>Ты - моя радость, моя любовь безмерная,</p>
+        <p>Ты - моя судьба и вечность.</p>
+        <br>
+        <p>С тобой каждый день - как первая весна,</p>
+        <p>Ты делаешь мир ярче и светлее,</p>
+        <p>Моя любимая, моя мечта сбылась сполна,</p>
+        <p>С тобой я стал сильнее и добрее.</p>
+    </section>
+    
+    <!-- Memory Card Game -->
+    <section class="memory-game">
+        <h2>Найди пары сердечек 💕</h2>
+        <div class="game-stats">
+            <div class="stat">
+                <div class="stat-label">Ходы</div>
+                <div class="stat-value" id="moves">0</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Пары</div>
+                <div class="stat-value" id="pairs">0/8</div>
+            </div>
+        </div>
+        <div class="memory-grid" id="memoryGrid"></div>
+        <div class="game-controls">
+            <button onclick="resetMemoryGame()">Начать заново</button>
+        </div>
+        <div class="game-message" id="gameMessage"></div>
+    </section>
+    
+    <!-- Quiz Game -->
+    <section class="quiz-game">
+        <h2>Вопросики </h2>
+        <div id="quizContainer">
+            <div class="quiz-question" id="quizQuestion"></div>
+            <div class="quiz-options" id="quizOptions"></div>
+        </div>
+        <div class="quiz-score" id="quizScore"></div>
+    </section>
+    
+    <!-- Final Proposal Section -->
+    <section class="final-section">
+        <button class="proposal-button" onclick="showProposal()">
+            Нажми, если интересно
+        </button>
+        
+        <div class="proposal-content" id="proposalContent">
+            <div class="proposal-question">
+                Будешь моей женой?
+            </div>
+            <div class="proposal-buttons">
+                <button class="yes-button" onclick="answerYes()">ДА!</button>
+                <button class="no-button" onclick="answerNo()">Нет</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Scripts --> <script src="haha.js"></script>
+</body>
+</html>
